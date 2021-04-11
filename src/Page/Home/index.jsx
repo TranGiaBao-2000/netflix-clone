@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
       <PrimarySearchAppBar />
-      <Carousel fetchUrl={requests.fetchActionMovies} />
+      <Carousel fetchUrl={requests.fetchNetflixOriginals} />
     </div>
   );
 }
