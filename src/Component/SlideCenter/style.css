@@ -1,0 +1,10 @@
+div.slick-slider.center button {
+  display: none !important;
+}
+img {
+  width: 100%;
+  background-position: center;
+}
+.item {
+  height: 700px;
+}

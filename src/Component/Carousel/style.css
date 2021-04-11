@@ -1,0 +1,63 @@
+.carousel {
+  position: relative;
+  height: 700px !important;
+  overflow: hidden;
+}
+.carousel .slick-slider {
+}
+.carousel .slick-slider > button {
+  display: none !important;
+}
+.carousel .slick-slider .slick-dots li button::before {
+  color: #fff !important;
+}
+.carousel-fade-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 10%;
+  background: linear-gradient(to bottom, transparent, #111);
+}
+
+@media screen and (max-width: 1300px) {
+  .carousel {
+    height: 550px !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .carousel {
+    height: 450px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carousel {
+    height: 350px !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .carousel {
+    height: 280px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    height: 250px !important;
+  }
+  .carousel-fade-bottom {
+    height: 20% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel {
+    height: 200px !important;
+  }
+  .carousel-fade-bottom {
+    height: 20% !important;
+  }
+}

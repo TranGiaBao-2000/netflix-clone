@@ -1,0 +1,16 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+
+.header:hover {
+  opacity: 1;
+}
+.header:focus-within {
+  opacity: 1;
+}
