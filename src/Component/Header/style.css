@@ -14,3 +14,9 @@
 .header:focus-within {
   opacity: 1;
 }
+
+@media screen and (max-width: 900px) {
+  .header {
+    position: relative;
+  }
+}

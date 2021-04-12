@@ -89,6 +89,30 @@ img {
   .item-content {
     top: 70px;
     left: 40px;
+    width: 350px;
+  }
+  .item-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .item-content p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+    display: none !important;
+  }
+
+  .item-content button {
+    padding: 7px 20px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .item-content {
+    top: 60px;
+    left: 40px;
     width: 300px;
   }
   .item-content h2 {
@@ -107,11 +131,11 @@ img {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .item-content {
-    top: 60px;
-    left: 40px;
-    width: 300px;
+    top: 55px;
+    left: 20px;
+    width: 75%;
   }
   .item-content h2 {
     font-size: 20px;
