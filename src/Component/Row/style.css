@@ -22,4 +22,20 @@
   .row .slick-dots {
     display: none !important;
   }
+  .row {
+    padding: 10px 0;
+  }
+  .row .item {
+    margin: 3px;
+    transition: transform 0.5s;
+    cursor: pointer;
+  }
+  .row .slick-prev {
+    left: 0 !important;
+    z-index: 100;
+  }
+  .row .slick-next {
+    right: 0 !important;
+    z-index: 100;
+  }
 }
