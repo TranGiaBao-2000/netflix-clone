@@ -17,3 +17,9 @@
 .row .item:hover {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 500px) {
+  .row .slick-dots {
+    display: none !important;
+  }
+}
