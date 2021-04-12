@@ -4,8 +4,6 @@
   overflow: hidden;
   object-fit: cover;
 }
-.carousel .slick-slider {
-}
 .carousel .slick-slider > button {
   display: none !important;
 }

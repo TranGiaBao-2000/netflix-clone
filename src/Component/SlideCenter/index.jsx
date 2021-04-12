@@ -6,7 +6,6 @@ import "./style.css";
 import { Button } from "@material-ui/core";
 function SlideCenter({ listFilm }) {
   const baseImgUrl = "https://image.tmdb.org/t/p/original";
-  console.log(listFilm);
   const settings = {
     dots: true,
     infinite: true,

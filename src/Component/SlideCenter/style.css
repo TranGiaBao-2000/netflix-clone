@@ -7,17 +7,17 @@ img {
   width: 100%;
   background-position: center;
 }
-.item {
+.carousel .item {
   height: 700px;
   position: relative;
 }
-.item-content {
+.carousel .item-content {
   position: absolute;
   top: 150px;
   left: 100px;
   width: 700px;
 }
-.item-content h2 {
+.carousel .item-content h2 {
   font-size: 50px;
   letter-spacing: 1px;
   color: #fff;
@@ -27,14 +27,14 @@ img {
   transition: all 1s;
   transform: rotate(60deg);
 }
-.item-content p {
+.carousel .item-content p {
   color: #fff;
   font-size: 20px;
   letter-spacing: 2px;
   margin: 15px 0;
   opacity: 0.5;
 }
-.item-content button {
+.carousel .item-content button {
   cursor: pointer;
   color: #fff;
   outline: none;
@@ -45,7 +45,7 @@ img {
   padding: 0.5rem 2rem;
   background-color: rgba(51, 51, 51, 0.5);
 }
-.item-content button:hover {
+.carousel .item-content button:hover {
   color: #000;
 }
 .carousel .slick-slider .slick-active * {
@@ -54,31 +54,31 @@ img {
 }
 
 @media (max-width: 1000px) {
-  .item-content {
+  .carousel .item-content {
     top: 80px;
     width: 500px;
   }
-  .item-content h2 {
+  .carousel .item-content h2 {
     font-size: 40px;
   }
 
-  .item-content p {
+  .carousel .item-content p {
     font-size: 17px;
     letter-spacing: 1px;
   }
 }
 
 @media (max-width: 900px) {
-  .item-content {
+  .carousel .item-content {
     top: 60px;
     width: 400px;
     left: 40px;
   }
-  .item-content h2 {
+  .carousel .item-content h2 {
     font-size: 28px;
   }
 
-  .item-content p {
+  .carousel .item-content p {
     font-size: 15px;
     letter-spacing: 1px;
     margin: 5px 0;
@@ -86,46 +86,46 @@ img {
 }
 
 @media (max-width: 600px) {
-  .item-content {
+  .carousel .item-content {
     top: 70px;
     left: 40px;
     width: 350px;
   }
-  .item-content h2 {
+  .carousel .item-content h2 {
     font-size: 28px;
     margin-bottom: 20px;
   }
 
-  .item-content p {
+  .carousel .item-content p {
     font-size: 10px;
     letter-spacing: 1px;
     margin: 5px 0;
     display: none !important;
   }
 
-  .item-content button {
+  .carousel .item-content button {
     padding: 7px 20px;
     font-size: 10px;
   }
 }
 
 @media (max-width: 500px) {
-  .item-content {
+  .carousel .item-content {
     top: 60px;
     left: 40px;
     width: 300px;
   }
-  .item-content h2 {
+  .carousel .item-content h2 {
     font-size: 20px;
   }
 
-  .item-content p {
+  .carousel .item-content p {
     font-size: 10px;
     letter-spacing: 1px;
     margin: 5px 0;
   }
 
-  .item-content button {
+  .carousel .item-content button {
     padding: 7px 20px;
     font-size: 10px;
   }

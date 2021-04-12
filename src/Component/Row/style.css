@@ -1,0 +1,19 @@
+.row h2 {
+  color: #fff;
+}
+.row {
+  padding: 10px 40px;
+}
+
+.row .item img {
+  object-fit: contain;
+}
+
+.row .item {
+  margin: 10px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.row .item:hover {
+  transform: scale(1.2);
+}
