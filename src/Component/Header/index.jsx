@@ -13,8 +13,13 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import MailIcon from "@material-ui/icons/Mail";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 const useStyles = makeStyles((theme) => ({
+  logoHeader: {
+    textDecoration: "none",
+    color: "e50914 !important",
+  },
   headerBackgroundColor: {
     backgroundColor: "#222",
     color: "#fff",
@@ -33,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     display: "none",
-    color: "#e50914",
+    color: "#e50914 !important",
     fontSize: "25px",
     [theme.breakpoints.up("sm")]: {
       display: "block",
@@ -187,7 +192,9 @@ export default function PrimarySearchAppBar() {
             aria-label="open drawer"
           ></IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Netflix Clone
+            <NavLink to={`/`} className={classes.logoHeader}>
+              Netflix Clone
+            </NavLink>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

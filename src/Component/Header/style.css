@@ -14,6 +14,9 @@
 .header:focus-within {
   opacity: 1;
 }
+.header a {
+  color: #e50914 !important;
+}
 
 @media screen and (max-width: 900px) {
   .header {
