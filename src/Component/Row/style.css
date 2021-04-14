@@ -38,4 +38,7 @@
     right: 0 !important;
     z-index: 100;
   }
+  .row .item:hover {
+    transform: none !important;
+  }
 }

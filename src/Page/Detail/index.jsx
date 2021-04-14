@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import GradeIcon from "@material-ui/icons/Grade";
 // import PrimarySearchAppBar from "../../Component/Header";
 import { useLocation } from "react-router-dom";
 import axios from "../../Action/axios";
@@ -25,7 +24,6 @@ function Detail() {
       );
       setTrailer(trailerID.data.results[0]?.key);
       setMovies(detail.data);
-      console.log(detail.data);
     }
     getDetail();
   }, [id]);
