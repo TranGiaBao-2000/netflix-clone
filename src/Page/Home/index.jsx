@@ -6,7 +6,6 @@ import Row from "../../Component/Row";
 function Home() {
   return (
     <div>
-      <PrimarySearchAppBar />
       <Carousel fetchUrl={requests.fetchNetflixOriginals} />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} isPoster />
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
