@@ -116,9 +116,6 @@ export default function PrimarySearchAppBar() {
   }, [redirect]);
 
   const handleSubmit = (e) => {
-    console.log("alo");
-    console.log(link);
-    console.log(redirect);
     if (e.key === "Enter") {
       const arr = e.target.value.split(" ");
       var searchCode = "";

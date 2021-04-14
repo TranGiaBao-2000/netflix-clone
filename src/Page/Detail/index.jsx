@@ -5,6 +5,7 @@ import GradeIcon from "@material-ui/icons/Grade";
 import { useLocation } from "react-router-dom";
 import axios from "../../Action/axios";
 import { Button } from "@material-ui/core";
+import Rateing from "../../Component/Rating";
 function Detail() {
   const baseImgUrl = "https://image.tmdb.org/t/p/original";
   const location = useLocation();
@@ -24,6 +25,7 @@ function Detail() {
       );
       setTrailer(trailerID.data.results[0]?.key);
       setMovies(detail.data);
+      console.log(detail.data);
     }
     getDetail();
   }, [id]);
@@ -63,6 +65,10 @@ function Detail() {
           <div className="wrapper">
             <div className="detail-content-img">
               <img src={baseImgUrl + movie.poster_path} alt="" />
+              <div className="">
+                <Rateing rate={movie.vote_average * 10} size="70" />
+                <p>{movie.vote_count} vote</p>
+              </div>
             </div>
             <div className="detail-content-text">
               <div className="detail-content-text-above">
@@ -79,7 +85,8 @@ function Detail() {
               </Button>
             </div>
             <div className="detail-content-rate">
-              <GradeIcon />
+              <Rateing rate={movie.vote_average * 10} size="70" />
+              <p>{movie.vote_count} vote</p>
             </div>
           </div>
         </div>

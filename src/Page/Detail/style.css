@@ -27,6 +27,9 @@
   align-items: center;
   height: 700px;
 }
+.detail-content-img div {
+  display: none;
+}
 .detail-content img {
   width: 200px;
   border-radius: 5px;
@@ -45,6 +48,7 @@
 
 .detail .detail-content-text {
   width: 600px;
+  margin: 0 40px;
 }
 .detail .detail-content-text p:first-child {
   font-size: 14px;
@@ -91,4 +95,84 @@
   right: 0;
   bottom: 0;
   z-index: 0;
+}
+.detail-content-rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.detail-content-rate p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.detail-content-rate > div > div:first-child {
+  width: 120px !important;
+  height: 120px !important;
+  color: #7ed321 !important;
+}
+.detail-content-rate > div > div:nth-child(2) > div {
+  font-size: 25px !important;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .detail-content {
+    /* height: 300px !important; */
+  }
+  .wrapper {
+    width: 100% !important;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .detail {
+    height: fit-content !important;
+    overflow: unset;
+  }
+  .detail-fade-bottom {
+    display: none !important;
+  }
+  .wrapper {
+    display: block !important;
+  }
+  .wrapper .detail-content-rate {
+    display: none !important;
+  }
+  .wrapper .detail-content-img {
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .wrapper .detail-content-img div p {
+    margin-top: 10px;
+  }
+  .wrapper .detail-content-img div {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .wrapper .detail-content-img > div > div > div:first-child {
+    width: 120px !important;
+    height: 120px !important;
+    color: #7ed321 !important;
+  }
+  .wrapper .detail-content-img > div > div > div:last-child > div {
+    font-size: 30px !important;
+    color: #fff !important;
+  }
+  .wrapper .detail-content-img p {
+    text-align: center;
+  }
+  .wrapper .detail-content-text {
+    width: 100%;
+    margin: 0;
+    padding: 10px 5px;
+    letter-spacing: 0;
+  }
+  .wrapper .detail-content-text p {
+    font-size: 17px !important;
+  }
 }
