@@ -1,0 +1,25 @@
+.search-page {
+  margin-top: 64px;
+  color: #fff;
+}
+.search-page h1 {
+  font-weight: 500;
+}
+.search-page > div > div {
+  width: 700px;
+}
+.search-page .list-group {
+  width: 100%;
+}
+.search-page .list-group li {
+  height: auto !important;
+  cursor: pointer;
+}
+.search-page .list-group li img {
+  object-fit: contain;
+  transition: transform 0.7s;
+}
+.search-page .list-group li:hover img {
+  transform: scale(1.2);
+  height: auto;
+}

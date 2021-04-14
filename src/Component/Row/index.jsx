@@ -48,7 +48,7 @@ function Row({ title, fetchUrl, isPoster }) {
     fetchData();
   }, [fetchUrl]);
 
-  const fillList = (list) => {
+  const fillList = () => {
     return (
       <div>
         <Slider {...settings}>

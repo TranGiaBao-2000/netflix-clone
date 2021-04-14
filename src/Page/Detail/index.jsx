@@ -22,8 +22,7 @@ function Detail() {
       const trailerID = await axios.get(
         `/movie/${id}/videos?api_key=a10ee5569194b352bcca20840b7f8a32`
       );
-      console.log(detail.data);
-      setTrailer(trailerID.data.results[0].key);
+      setTrailer(trailerID.data.results[0]?.key);
       setMovies(detail.data);
     }
     getDetail();
@@ -47,9 +46,9 @@ function Detail() {
         <iframe
           src={`https://www.youtube.com/embed/${trailer}?autoplay=1&mute=0&loop=1&playlist=${trailer}`}
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     );

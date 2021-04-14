@@ -13,7 +13,7 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import MailIcon from "@material-ui/icons/Mail";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import "./style.css";
 const useStyles = makeStyles((theme) => ({
   logoHeader: {
@@ -105,6 +105,19 @@ export default function PrimarySearchAppBar() {
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
+  };
+
+  const history = useHistory();
+  const handleSubmit = (e) => {
+    if (e.key === "Enter") {
+      const arr = e.target.value.split(" ");
+      var searchCode = "";
+      arr.map((item) => {
+        return (searchCode += item + "+");
+      });
+      searchCode = searchCode.substring(0, searchCode.length - 1);
+      history.push(`search-movie/${searchCode}`);
+    }
   };
 
   const handleMobileMenuClose = () => {
@@ -206,7 +219,10 @@ export default function PrimarySearchAppBar() {
                 root: classes.inputRoot,
                 input: classes.inputInput,
               }}
-              inputProps={{ "aria-label": "search" }}
+              inputProps={{
+                "aria-label": "search",
+                onKeyDown: handleSubmit,
+              }}
             />
           </div>
           <div className={classes.grow} />

@@ -2,7 +2,8 @@
   position: relative;
   height: 600px !important;
   overflow: hidden;
-  object-fit: cover;
+  object-fit: contain;
+  margin-top: 64px;
 }
 .carousel .slick-slider > button {
   display: none !important;
