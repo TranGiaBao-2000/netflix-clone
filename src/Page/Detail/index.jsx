@@ -56,7 +56,6 @@ function Detail() {
 
   return (
     <div>
-      {" "}
       <div className="detail">
         <img src={baseImgUrl + movie.backdrop_path} alt="" />
         <div className="detail-content">
