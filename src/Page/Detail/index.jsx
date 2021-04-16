@@ -75,7 +75,7 @@ function Detail() {
               </div>
               <p>
                 {width < 500
-                  ? movie.overview?.substring(0, 250) + "..."
+                  ? movie.overview?.substring(0, 220) + "..."
                   : movie.overview}
               </p>
               <Button
