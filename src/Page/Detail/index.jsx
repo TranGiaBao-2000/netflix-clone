@@ -14,6 +14,7 @@ function Detail() {
   const [movie, setMovies] = useState([]);
   const [trailer, setTrailer] = useState([]);
   const [showTrailer, setShowTrailer] = useState("");
+  const { innerWidth: width } = window;
   useEffect(() => {
     async function getDetail() {
       const detail = await axios.get(
@@ -72,7 +73,11 @@ function Detail() {
                 <p>{movie.release_date}</p>
                 <h2>{movie.original_title}</h2>
               </div>
-              <p>{movie.overview}</p>
+              <p>
+                {width < 500
+                  ? movie.overview?.substring(0, 250) + "..."
+                  : movie.overview}
+              </p>
               <Button
                 variant="contained"
                 className="detail-button"
